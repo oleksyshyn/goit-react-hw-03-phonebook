@@ -48,12 +48,10 @@ class App extends React.Component {
     if (parsedContacts) {
       this.setState({contacts: parsedContacts});
     }
-    
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (this.state.contacts !== prevState.contacts) {
-      console.log('Треба зробити запис в локал сторедж');
       localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
     }
   }

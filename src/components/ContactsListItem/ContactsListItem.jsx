@@ -9,7 +9,6 @@ const ContactsListItem = ({ contactId, name, number, onDeleteContact }) => {
             <button className={css.button} onClick={() => onDeleteContact(contactId)}>Delete</button>
         </li>
     )
- 
 }
 
 export default ContactsListItem;
@@ -19,4 +18,4 @@ ContactsListItem.propTypes = {
     name: PropTypes.string.isRequired,
     number: PropTypes.string.isRequired,
     onDeleteContact: PropTypes.func.isRequired,
-    };
+};
